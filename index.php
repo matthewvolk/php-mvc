@@ -1,6 +1,6 @@
 <?php
 
-require 'functions.php';
+require './utils/functions.php';
 require './utils/Task.php';
 
 $query = require 'bootstrap.php';
