@@ -6,7 +6,7 @@ use App\Core\App;
 
 class PagesController {
   public function home() {
-    require 'utils/functions.php';
+    require 'core/utils/functions.php';
 
     $tasks = App::get('database')->selectAll('todos', 'Task');
     $users = App::get('database')->selectAll('names', 'Name');
