@@ -1,8 +1,12 @@
 <?php
 
+$app = [];
+
+require 'Router.php';
+require 'Request.php';
 require 'database/Connection.php';
 require 'database/QueryBuilder.php';
 
-return $query = new QueryBuilder(
+$app['database'] = new QueryBuilder(
   Connection::make()
 );
