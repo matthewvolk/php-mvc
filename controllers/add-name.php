@@ -1,3 +1,7 @@
 <?php
 
-echo "<h1>You typed: " . $_POST['name'];
+$app['database']->insert('names', [
+  'name' => $_POST['name'],
+]);
+
+header('Location: /');

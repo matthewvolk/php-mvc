@@ -4,6 +4,7 @@
   <h1>Index View Page</h1>
   
 
+
   <h2>Tasks:</h2>
   <ul>
     <?php foreach ($tasks as $task) : ?>
@@ -17,8 +18,13 @@
     <?php endforeach; ?>
   </ul>
 
+
+
+
   <h2>Range Gen:</h2>
     <?php generateRange(5, 15); ?>
+
+
 
   <h2>Enter your Name:</h2>
   <form method="POST" action="/names">
@@ -26,5 +32,14 @@
     <button type="submit">Submit</button>
   </form>
 
+
+  <h2>Names:</h2>
+  <ul>
+    <?php foreach ($users as $user) : ?>
+      <li>
+        <?= $user->name; ?>
+      </li>
+    <?php endforeach; ?>
+  </ul>
 
 <?php require('partials/footer.php') ?>
