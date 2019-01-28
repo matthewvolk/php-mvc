@@ -2,6 +2,6 @@
 
 require 'bootstrap.php';
 
-require Router::load('routes.php')
+require Router::load('routes/routes.php')
   ->direct(Request::uri());
   
