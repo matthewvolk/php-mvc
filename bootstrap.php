@@ -1,6 +1,6 @@
 <?php
 
-$app = [];
+use App\Core\App;
 
 App::bind('database', new QueryBuilder(
   Connection::make()
@@ -9,7 +9,7 @@ App::bind('database', new QueryBuilder(
 function view($name, $data = []) {
   extract($data);
 
-  return require "views/$name.phtml";
+  return require "app/views/$name.phtml";
 }
 
 function redirect($path) {

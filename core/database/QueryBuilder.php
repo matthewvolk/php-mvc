@@ -7,7 +7,7 @@ class QueryBuilder {
     $this->pdo = $pdo;
   }
 
-  public function selectAll($table, $intoClass) {
+  public function selectAll($table) {
     $statement = $this->pdo->prepare("select * from $table");
     $statement->execute();
     
@@ -15,7 +15,7 @@ class QueryBuilder {
      * PDO::FETCH_CLASS allows you to save data into a class, 
      * so you can add methods and behavior to the class to modify the data. 
      */
-    return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
+    return $statement->fetchAll(PDO::FETCH_OBJ);
   }
 
   public function insert($table, $parameters) {
