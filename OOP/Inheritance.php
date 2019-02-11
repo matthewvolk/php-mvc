@@ -28,5 +28,5 @@ class Child extends Mother {
 }
 
 $mother = new Mother("American");
-var_dump($mother->getEyes());
-var_dump($mother->getNationality());
+print($mother->getEyes() . "\n");
+print($mother->getNationality() . "\n");
