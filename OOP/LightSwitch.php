@@ -20,7 +20,7 @@ class LightSwitch {
   /**
   * Private vs. Protected
   * Private methods may ONLY be accessed from the parent class,
-  * not from objects that extend the class
+  * not from objects that extend the class.
   */
   private function connect() {
     print("Connecting to electricity...");
