@@ -7,6 +7,7 @@ class Post {
     $this->postBody = $postBody;
   }
 
+  // This function sends a 'message' to another class PostBody
   public function readPost() {
     $this->postBody->getContent();
   }
