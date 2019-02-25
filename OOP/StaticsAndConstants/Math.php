@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * NOTE: Static properties/methods can be anti-pattern to OOP because they break encapsulation
+ */
+
 class Math {
   public static $funMessage = 'I love math!';
 
