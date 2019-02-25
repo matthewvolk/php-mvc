@@ -20,7 +20,7 @@ class Business {
 
   // Type hinting: function foo (ClassName $objectName) {}
   // This function sends a 'message' to another class Staff
-  public function hire(Person $person) {
+  public function hire(Users\Person $person) {
     $this->staff->add($person);
   }
 

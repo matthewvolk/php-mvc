@@ -9,7 +9,7 @@ class Staff {
     $this->members = $members;
   }
 
-  public function add($person) {
+  public function add(Users\Person $person) {
     $this->members[] = $person;
   }
 
