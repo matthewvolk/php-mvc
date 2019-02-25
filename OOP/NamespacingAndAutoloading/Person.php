@@ -1,5 +1,7 @@
 <?php
 
+namespace MJVolk;
+
 class Person {
   protected $name;
 

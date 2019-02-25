@@ -8,12 +8,7 @@
  * require 'Staff.php';
  */
 
-$matt = new Person("Matt V, Founder");
-$jane = new Person("Jane Doe, Project Manager");
+// The better, autoloader way:
+require 'vendor/autoload.php';
 
-$codeLabsStaff = new Staff([$matt]);
-$codeLabs = new Business($codeLabsStaff);
-
-$codeLabs->hire($jane);
-
-$codeLabs->getStaffMembers();
+require 'example.php';
