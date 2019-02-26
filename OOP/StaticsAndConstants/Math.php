@@ -14,7 +14,9 @@ class Math {
    * some input, and spits out some output
    */
   public static function add(...$nums) {
+
     echo static::$funMessage . "\n";
+
     foreach ($nums as $num) {
       if (count($nums) == $num) {
         echo $num . " equals:\n";
@@ -22,6 +24,7 @@ class Math {
       }
       echo $num . " + ";
     }
+    
     return array_sum($nums);
   }
 }
