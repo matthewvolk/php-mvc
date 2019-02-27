@@ -8,7 +8,7 @@ class Math {
   public static $funMessage = 'I love math!';
 
   /**
-   * You know it might be a static method if the
+   * Use a static method if the
    * method doesn't need to reach into objects
    * and manipulate data. This function just takes 
    * some input, and spits out some output
