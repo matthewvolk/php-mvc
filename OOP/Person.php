@@ -8,10 +8,12 @@ class Person {
     $this->name = $name;
   }
 
+  // Accessor
   public function getAge() {
     return $this->age * 365;
   }
 
+  // Mutator
   public function setAge($age) {
     if ($age < 18) {
       throw new Exception("You must be 18 years or older");
